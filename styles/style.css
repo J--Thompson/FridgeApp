@@ -51,9 +51,9 @@ color: #000000;
 text-align: center;
 }
 
-.post {
+.posts {
 position: relative;
-margin-left: 0px;
+margin-left: 10px;
 margin-right: auto;
 width: 570px;
 border-bottom: solid;
@@ -61,7 +61,7 @@ border-width: thin;
 border-color: #FFFFFF;
 }
 
-p {
+h4 {
 margin-left: 10px;
 font-family: 'Titillium Web', sans-serif;
 font-weight: 300 ;
