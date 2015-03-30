@@ -51,13 +51,14 @@ color: #000000;
 text-align: center;
 }
 
-.post {
+.posts {
 position: relative;
-margin-left: 10px;
 margin-right: auto;
 width: 570px;
+margin-bottom: 10px;
 border-bottom: solid;
 border-width: thin;
+/*border-radius: 5px;*/
 border-color: #FFFFFF;
 }
 
