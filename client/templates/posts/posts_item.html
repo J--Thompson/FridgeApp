@@ -1,10 +1,30 @@
 <template name="postItem">
+	
+		<!--<p>
+        	submitted by {{author}}
+        	{{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+      	</p>
+	</div>-->
 	<div class = "posts">
-		<h4>{{kind}}</h4>
-            <div>
-            	 <ul>
-					<li> <span> {{amount}} </span> {{product}} </li>
-				</ul>
-            </div>
+		<!--<h4>{{kind}}</h4>-->
+		 <ul>
+			<li> 
+				<div class="row">
+					<div class="col-xs-4">
+						<span>{{amount}}</span> {{product}} 
+					</div>
+					<div class="col-xs-4">
+						<input class="btn changeAmount" type="button" value="+">
+						<input class="btn changeAmount" type="button" value="-">
+					</div>
+					<div class="col-xs-4">
+						<p>
+		        		<!--{{#if ownPost}}--> <a href="{{pathFor 'postEdit'}}">Edit</a><!-- {{/if}}-->
+		      			</p>
+					</div>	
+	      		</div>
+	      	</li>
+      	</ul>
+           
      </div>
 </template>
