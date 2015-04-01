@@ -1,4 +1,4 @@
-Template.postQuantity.events({
+Template.postItem.events({
 	'submit amount': function(e) {
 		
 
@@ -9,7 +9,7 @@ Template.postQuantity.events({
 		}
 
 		function increaseDecrease () {
-    	var b = document.getElementById('textBox');
+    	var b = document.getElementById('{{amount}}');
     	if (this.id == 'decreaseNumber') {
     	b.value = parseInt(b.value) - 1;
     	}
