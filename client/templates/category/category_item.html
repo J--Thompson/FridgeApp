@@ -1,0 +1,16 @@
+<template name='categoryItem'>
+	<div class='category'>
+		<h2>{{name}}</h2>
+		{{#linkTo route='postSubmit'}}
+			Add Item
+		{{/linkTo}}
+		<div class='pull-right'>
+			{{#linkTo route='categorySubmit'}}
+				Edit category
+			{{/linkTo}}	
+		</div>
+		{{#each postsInCategory}}
+			{{> postItem}}
+		{{/each}}
+	</div>
+</template>

@@ -6,10 +6,11 @@ Template.postSubmit.events({
       userId: Meteor.userId(),
       amount: parseInt($(e.target).find('[name=amount]').val()),
       product: $(e.target).find('[name=product]').val(),
+      categoryId: this._id
 
     };
 
     post._id = Posts.insert(post);
-    Router.go('postsList');
+    Router.go('categoryList');
   }
 });
