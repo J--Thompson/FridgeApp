@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>-->
         </button>
         <a href="{{pathFor 'postsList'}}"> <img src="images/logo.png" alt="logo" class="head_logo"></a>
-        <a class="sub-btn" href="{{pathFor 'postSubmit'}}">Submit Product</a>
+        {{#if currentUser}}<a class="sub-btn" href="{{pathFor 'categorySubmit'}}">Create Category</a>{{/if}}
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav navbar-right">

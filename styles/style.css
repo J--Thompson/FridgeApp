@@ -51,13 +51,14 @@ color: #000000;
 text-align: center;
 }
 
-.post {
+.posts {
 position: relative;
-margin-left: 10px;
 margin-right: auto;
 width: 570px;
+margin-bottom: 10px;
 border-bottom: solid;
 border-width: thin;
+/*border-radius: 5px;*/
 border-color: #FFFFFF;
 }
 
@@ -100,6 +101,7 @@ color: #FFFFFF;
 	margin-top: 10px;
 	background-color: #FFFFFF;
 	color: black;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 .form-input{
@@ -123,6 +125,16 @@ color: #FFFFFF;
 
 }
 
+a {
+	color: #a28754;
+}
+a:hover{
+	color: #a28754;
+}
+.category {
+	background-color: rgb(0, 0, 0, .2);
+	border-radius: 5px;
+}
 
 
 

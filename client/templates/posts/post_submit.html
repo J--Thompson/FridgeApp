@@ -1,20 +1,21 @@
 <template name="postSubmit">
+	<h2>add Item to {{name}}</h2>
 	<form class="container">	
-		<div class="">
+		<div>
 
-			<div>
+			<!--<div>
 				<label class="label">Kind</label>
 			</div>
 			<div>	
 				<input name="kind" id="kind" type="text" value="" placeholder="kind of product" class="form-input"/>
-			</div>
+			</div>-->
 			
 			<div>
 				<div>
 					<label class="label">Amount</label>
 				</div>
 				<div>	
-					<input name="amount" id="amount" type="text" value="" placeholder="amount of product" class="form-input">
+					<input name="amount" id="amount" type="number" value="" placeholder="amount of product" class="form-input">
 				</div>
 				
 
@@ -28,7 +29,7 @@
 				
 			</div>
 			<div>
-				<input type="submit" value="Submit" class="submit-btn"/>
+				<input type="submit" value="Submit" class="btn submit-btn"/>
 			</div>
 		</div>
 	</form>
