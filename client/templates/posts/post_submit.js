@@ -6,6 +6,7 @@ Template.postSubmit.events({
       userId: Meteor.userId(),
       amount: parseInt($(e.target).find('[name=amount]').val()),
       product: $(e.target).find('[name=product]').val(),
+      date: $(e.target).find('[name=date]').val()
 
     };
 
