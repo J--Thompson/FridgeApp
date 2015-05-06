@@ -13,3 +13,7 @@ Template.postSubmit.events({
     Router.go('postsList');
   }
 });
+
+Template.postSubmit.onRendered(function() {
+    this.$('.datetimepicker').datetimepicker();
+});
