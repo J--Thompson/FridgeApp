@@ -6,7 +6,8 @@ Template.postEdit.events({
 
     var postProperties = {
       amount: $(e.target).find('[name=amount]').val(),
-      product: $(e.target).find('[name=product]').val()
+      product: $(e.target).find('[name=product]').val(),
+      date: $(e.target).find('[name=date]').val()
     }
 
     Posts.update(currentPostId, {$set: postProperties}, function(error) {
@@ -28,4 +29,8 @@ Template.postEdit.events({
       Router.go('categoryList');
     }
   }
+});
+
+Template.postEdit.onRendered(function() {
+    this.$('.datetimepicker').datetimepicker();
 });
