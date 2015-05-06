@@ -1,7 +1,8 @@
 body {
 background-image: url("../images/background_img.gif");
 background-size: auto;
-background-repeat: repeat;
+background-attachment: fixed;
+font-family: 'Titillium Web', sans-serif;
 }
 
 .container {
@@ -54,12 +55,12 @@ text-align: center;
 .posts {
 position: relative;
 margin-right: auto;
-width: 570px;
+width: 100%;
 margin-bottom: 10px;
 border-bottom: solid;
 border-width: thin;
 /*border-radius: 5px;*/
-border-color: #FFFFFF;
+border-color: #000000;
 }
 
 h4 {
