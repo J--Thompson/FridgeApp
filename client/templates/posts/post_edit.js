@@ -15,7 +15,7 @@ Template.postEdit.events({
         // display the error to the user
         alert(error.reason);
       } else {
-        Router.go('postsList');
+        Router.go('categoryList');
       }
     });
   },

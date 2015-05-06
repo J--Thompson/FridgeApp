@@ -1,11 +1,11 @@
 <template name='categoryItem'>
-	<div class='category'>
+	<div class='category well'>
 		<h2>{{name}}</h2>
 		{{#linkTo route='postSubmit'}}
 			Add Item
 		{{/linkTo}}
 		<div class='pull-right'>
-			{{#linkTo route='categorySubmit'}}
+			{{#linkTo route='categoryEdit'}}
 				Edit category
 			{{/linkTo}}	
 		</div>
