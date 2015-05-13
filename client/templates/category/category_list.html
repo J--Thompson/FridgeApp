@@ -1,5 +1,10 @@
 <template name="categoryList">
-	<div class='category'>
+	<div class='category container'>
+		<div class='row'>
+			<div class='col-xs-12'>
+        		{{#if currentUser}}<a class="btn submit-category" type='button' href="{{pathFor 'categorySubmit'}}">Create Category</a>{{/if}}
+        	</div>
+		</div>
 		{{#each category}}
    			{{> categoryItem}}
     	{{/each}}
