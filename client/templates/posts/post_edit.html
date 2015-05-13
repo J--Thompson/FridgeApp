@@ -7,7 +7,7 @@
 						<label class="label">Amount</label>
 					</div>
 					<div>	
-						<input name="amount" id="amount" type="number" value="" placeholder="amount of product" class="form-input">
+						<input name="amount" id="amount" type="number" value="{{amount}}" placeholder="amount of product" class="form-input">
 					</div>
 				</div>
 				<div class='col-xs-4'>
@@ -15,7 +15,7 @@
 							<label class="label">Product</label>
 						</div>
 						<div>	
-							<input name="product" id="product" type="text" value="" placeholder="product" class="form-input">
+							<input name="product" id="product" type="text" value="{{product}}" placeholder="product" class="form-input">
 						</div>
 				</div>
 			</div>
@@ -24,7 +24,7 @@
 						<label class='label'>Expire date</label>
 					    <div class="input-group datetimepicker">
 				    		<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-				    		<input class="set-due-date form-control" name="date" type="text"/>
+				    		<input class="set-due-date form-control" name="date" type="text" value='{{date}}'/>
 				  		</div>
 		  			</div>
 	  			</div>
